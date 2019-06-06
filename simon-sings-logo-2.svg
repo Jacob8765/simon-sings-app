@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="1024"
+   height="1024"
+   viewBox="0 0 270.93333 270.93334"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="simon-sings-logo-2.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
+   inkscape:export-filename="E:\Desktop\icon-512x512.png"
+   inkscape:export-xdpi="49.127434"
+   inkscape:export-ydpi="49.127434">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="254.69903"
+     inkscape:cy="256.86459"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer2"
+     showgrid="false"
+     units="px"
+     showguides="true"
+     inkscape:guide-bbox="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid4508" />
+    <sodipodi:guide
+       position="226.11002,192.43406"
+       orientation="0.70710678,0.70710678"
+       id="guide4518"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="93.544335,29.934187"
+       orientation="0.70710678,0.70710678"
+       id="guide4520"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Layer 2">
+    <circle
+       style="fill:#0277bd;fill-opacity:1;fill-rule:evenodd;stroke-width:0.2204861"
+       id="path4514"
+       cx="135.76906"
+       cy="136.15239"
+       r="132.29167" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.99999994px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;opacity:0.4"
+       d="M 535.98828 159.62695 L 395.98047 213.85742 L 343.45117 322.95508 L 363.6543 434.07031 L 581.84766 512.86328 L 686.9043 583.57422 L 701.04492 680.54883 L 646.49805 789.64453 L 474.77148 830.05078 L 353.55273 797.72656 L 302.03516 859.3457 L 353.55273 910.86328 L 453.28125 1010.5898 A 500.00002 500.00002 0 0 0 513.14258 1014.5918 A 500.00002 500.00002 0 0 0 1013.1426 514.5918 A 500.00002 500.00002 0 0 0 1008.4043 450.50391 L 854.58984 296.68945 L 747.51367 189.61328 L 697.00586 209.81641 L 535.98828 159.62695 z "
+       transform="scale(0.26458333)"
+       id="path4550" />
+  </g>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-26.06665)">
+    <path
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:266.78067017px;line-height:32;font-family:Corbel;-inkscape-font-specification:'Corbel, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:3.57293367"
+       d="m 141.81339,68.301046 c -16.93432,0 -30.65541,4.385194 -41.16338,13.156303 -10.421122,8.77111 -15.631602,20.408321 -15.631602,34.911041 0,10.07375 2.34469,18.10665 7.0342,24.09879 4.6895,5.9053 10.464472,10.29101 17.325042,13.15682 6.86057,2.77896 15.93566,5.60086 27.22521,8.46667 13.0264,3.56055 22.05811,6.73053 27.09499,9.50949 5.03687,2.77897 8.98824,6.47005 11.85405,11.07271 2.95265,4.60266 4.42867,10.42101 4.42867,17.45527 0,13.98167 -4.34181,23.88154 -13.02608,29.69999 -8.59742,5.81846 -20.71235,8.72764 -36.34403,8.72764 -6.33952,0 -14.32903,-1.21573 -23.96856,-3.64733 -0.50079,-0.12632 -0.98963,-0.25303 -1.47588,-0.37982 a 17.916153,17.916153 0 0 0 -17.706932,-15.29312 17.916153,17.916153 0 0 0 -17.9157,17.91622 17.916153,17.916153 0 0 0 17.9157,17.91622 17.916153,17.916153 0 0 0 15.741162,-9.36429 c 0.37021,0.0927 0.71696,0.18433 1.09709,0.2775 8.85795,2.17107 17.36856,3.25613 25.53177,3.25613 19.80013,0 35.04114,-4.34181 45.72279,-13.02607 10.76849,-8.77111 16.1525,-20.97281 16.1525,-36.60449 0,-10.68165 -2.51821,-19.10498 -7.55509,-25.27081 -4.95003,-6.25267 -10.81228,-10.76852 -17.58601,-13.54749 -6.77373,-2.86581 -16.15249,-5.94903 -28.13678,-9.24905 -10.68165,-2.95265 -18.71454,-5.55763 -24.09879,-7.81554 -5.38424,-2.25791 -9.68319,-5.47127 -12.89637,-9.63972 -3.126332,-4.16845 -4.689122,-9.90003 -4.689122,-17.19482 0,-11.55007 3.603802,-20.798691 10.811752,-27.746105 7.29478,-6.947413 18.45428,-10.421069 33.47805,-10.421069 6.33952,0.08684 12.15787,0.694706 17.45527,1.823662 2.98517,0.625919 5.70706,1.321099 8.18503,2.080492 a 17.916153,17.916153 0 0 0 -0.51005,4.157885 17.916153,17.916153 0 0 0 17.91622,17.915705 17.916153,17.916153 0 0 0 17.91622,-17.915705 17.916153,17.916153 0 0 0 -17.91622,-17.916218 17.916153,17.916153 0 0 0 -11.08614,3.845759 c -10.15489,-2.939275 -20.54745,-4.41265 -31.17898,-4.41265 z"
+       id="text4506"
+       inkscape:connector-curvature="0" />
+  </g>
+</svg>
