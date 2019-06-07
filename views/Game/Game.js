@@ -6,7 +6,7 @@ import { Audio, AdMobInterstitial } from "expo";
 import { getHighScore, setHighScore } from '../../functions/HighScore';
 import { ActivityIndicator, Title, IconButton } from "react-native-paper";
 
-const PRODUCTION = true;
+const PRODUCTION = false;
 const {width, height} = Dimensions.get("window");
 
 const styles = StyleSheet.create({

@@ -4,7 +4,7 @@
     "description": "Learn ear training",
     "slug": "simon-sings-app",
     "privacy": "public",
-    "sdkVersion": "32.0.0",
+    "sdkVersion": "33.0.0",
     "version": "1.0.2",
     "orientation": "landscape",
     "icon": "./assets/icon.png",
@@ -19,7 +19,7 @@
     "android": {
       "package": "com.jacobschuster.simonsings",
       "permissions": [],
-      "versionCode": 2
+      "versionCode": 3
     }
   }
 }
