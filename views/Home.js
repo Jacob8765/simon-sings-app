@@ -9,8 +9,8 @@ import { scale } from "../functions/AutoScale";
 const { width, height } = Dimensions.get("window");
 
 export default class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {
       highScore: "0",
