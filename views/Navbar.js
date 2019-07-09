@@ -39,6 +39,7 @@ export default class Navbar extends React.Component {
 const styles = StyleSheet.create({
   header: {
     margin: scale(10),
+    marginBottom: scale(13),
     marginTop: scale(30),
     flexDirection: "row"
   }

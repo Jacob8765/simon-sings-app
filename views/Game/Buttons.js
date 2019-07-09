@@ -1,97 +1,71 @@
-import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import { Button } from 'react-native-paper';
+import React from "react";
+import { View, StyleSheet, TouchableWithoutFeedback } from "react-native";
+import { Text, Surface, TouchableRipple } from "react-native-paper";
+import { scale } from "../../functions/AutoScale";
+
+const button = (id, letter, solfege, activeId, staffOnly, solfegeEnabled, handlePress) => {
+  return (
+    <Surface key={id} style={styles.buttonSurface}>
+      <TouchableRipple style={[styles.buttonContent, { backgroundColor: activeId == id && !staffOnly ? "#388E3C" : "black" }]} onPress={() => console.log("pressed")}>
+        <TouchableWithoutFeedback onPressIn={() => handlePress(id)}>
+          <Text style={styles.buttonText}>{solfegeEnabled ? solfege : letter}</Text>
+        </TouchableWithoutFeedback>
+      </TouchableRipple>
+    </Surface>
+  );
+};
 
 const styles = StyleSheet.create({
-  buttonContainer: {
-    justifyContent: "center",
-    flexDirection: "row",
-    flexWrap: "wrap"
+  buttonSurface: {
+    elevation: 1,
+    borderRadius: scale(3),
+    width: scale(48),
+    height: scale(48)
   },
 
-  blackKeyContainer: {
-    justifyContent: "center",
+  buttonContent: {
+    backgroundColor: "#212121",
+    borderRadius: scale(3),
+    width: scale(48),
+    height: scale(48),
     flexDirection: "row",
-    flexWrap: "wrap",
-    marginBottom: 10
-  },
-
-  button: {
-    margin: 3,
-    backgroundColor: "black"
+    justifyContent: "center",
+    alignItems: "center",
+    alignContent: "center"
   },
 
   buttonText: {
-    textAlign: "center"
+    fontSize: scale(20),
+    color: "white"
   },
 
-  buttonContentStyle: {
-    padding: 1.5
+  buttonContainer: {
+    flexDirection: "row",
+    marginRight: 30,
+    marginLeft: 30,
+    justifyContent: "space-between"
   }
-})
+});
 
 export default class Buttons extends React.Component {
-  static navigationOptions = {
-    title: 'Game',
-  };
+  constructor() {
+    super();
 
-  handlePress = (value, checkAnswer) => {
-    if (checkAnswer) {
-      this.props.checkAnswer(value);
-    }
+    this.notes = [{ letter: "C", solfege: "Do", id: 1 }, { letter: "D", solfege: "Re", id: 2 }, { letter: "E", solfege: "Mi", id: 3 }, { letter: "F", solfege: "Fa", id: 4 }, { letter: "G", solfege: "Sol", id: 5 }, { letter: "A", solfege: "La", id: 6 }, { letter: "B", solfege: "Ti", id: 7 }, { letter: "C", solfege: "Do", id: 8 }];
+    this.blackNotes = [{ placeholder: true }, { letter: "C#", solfege: "Ci", id: 9 }, { placeholder: true }, { letter: "D#", solfege: "Ra", id: 10 }, { placeholder: true }, { placeholder: true }, { placeholder: true }, { letter: "F#", solfege: "Fi", id: 11 }, { placeholder: true }, { letter: "G#", solfege: "Si", id: 12 }, { placeholder: true }, { letter: "A#", solfege: "Le", id: 13 }, { placeholder: true }, { placeholder: true }, { placeholder: true }];
+    console.log(this.blackNotes.length);
   }
+
+  handlePress = value => {
+    this.props.checkAnswer(value);
+  };
 
   render() {
     return (
       <View>
-        {this.props.blackKeys ?
-          <View style={styles.blackKeyContainer}>
-            <Button mode="contained" dark={true} onPress={() => this.handlePress(9, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 9 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-              {this.props.solfege ? "Ci" : "C#"}
-            </Button>
-            <Button mode="contained" dark={true} onPress={() => this.handlePress(10, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 10 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-              {this.props.solfege ? "Ra" : "D#"}
-            </Button>
-            <Button mode="contained" dark={true} onPress={() => this.handlePress(11, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 11 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-              {this.props.solfege ? "Fi" : "F#"}
-            </Button>
-            <Button mode="contained" dark={true} onPress={() => this.handlePress(12, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 12 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-              {this.props.solfege ? "Si" : "G#"}
-            </Button>
-            <Button mode="contained" dark={true} onPress={() => this.handlePress(13, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 13 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-              {this.props.solfege ? "Le" : "A#"}
-            </Button>
-          </View>
-          : null
-        }
+        {this.props.blackKeys ? <View style={[styles.buttonContainer, { marginBottom: 5 }]}>{this.blackNotes.map((note, index) => (!note.placeholder ? button(note.id, note.letter, note.solfege, this.props.activeId, this.props.staffOnly, this.props.solfege, this.handlePress) : <View style={{ width: scale(48), height: scale(48) }} />))}</View> : null}
 
-
-        <View style={styles.buttonContainer}>
-          <Button mode="contained" dark={true} onPress={() => this.handlePress(1, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 1 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-            {this.props.solfege ? "Do" : "C"}
-          </Button>
-          <Button mode="contained" dark={true} onPress={() => this.handlePress(2, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 2 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-            {this.props.solfege ? "Re" : "D"}
-          </Button>
-          <Button mode="contained" dark={true} onPress={() => this.handlePress(3, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 3 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-            {this.props.solfege ? "Mi" : "E"}
-          </Button>
-          <Button mode="contained" dark={true} onPress={() => this.handlePress(4, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 4 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-            {this.props.solfege ? "Fa" : "F"}
-          </Button>
-          <Button mode="contained" dark={true} onPress={() => this.handlePress(5, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 5 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-            {this.props.solfege ? "Sol" : "G"}
-          </Button>
-          <Button mode="contained" dark={true} onPress={() => this.handlePress(6, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 6 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-            {this.props.solfege ? "La" : "A"}
-          </Button>
-          <Button mode="contained" dark={true} onPress={() => this.handlePress(7, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 7 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-            {this.props.solfege ? "Ti" : "B"}
-          </Button>
-          <Button mode="contained" dark={true} onPress={() => this.handlePress(8, true)} contentStyle={this.props.deviceWidth < 680 ? styles.buttonContentStyle : null} style={[styles.button, { backgroundColor: this.props.activeId == 8 && !this.props.staffOnly ? "#388E3C" : "black" }]}>
-            {this.props.solfege ? "Do" : "C"}
-          </Button>
-        </View>
+        <View style={styles.buttonContainer}>{this.notes.map((note, index) => button(note.id, note.letter, note.solfege, this.props.activeId, this.props.staffOnly, this.props.solfege, this.handlePress))}</View>
       </View>
     );
   }

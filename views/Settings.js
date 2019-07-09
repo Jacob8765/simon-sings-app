@@ -94,6 +94,6 @@ const styles = StyleSheet.create({
   },
 
   settingText: {
-    fontSize: scale(16)
+    fontSize: 16 
   }
 });

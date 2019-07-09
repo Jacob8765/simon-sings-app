@@ -1,21 +1,15 @@
 import React from "react";
-import {
-  Svg,
-  Path,
-  Defs,
-  Polyline
-} from 'react-native-svg';
+import { Svg, Path, Defs, Polyline } from "react-native-svg";
+import { Dimensions } from "react-native";
+import { scale } from "../../functions/AutoScale";
+
+const { width, height } = Dimensions.get("window");
 
 export default class Staff extends React.Component {
   render() {
     if (this.props.blackKeys) {
       return (
-        <Svg
-          width="550"
-          height="70"
-          viewBox="0 0 1800 175"
-          style={{ marginTop: -10, marginBottom: this.props.deviceWidth < 675 ? 10 : 20 }}
-        >
+        <Svg width={width - 22} height={(220 / 1422) * (width - 22)} viewBox="0 0 1800 212" style={{ marginTop: -10, marginBottom: scale(20) }}>
           <Defs id="defs1123" />
           <Polyline
             className="StaffLines"
@@ -23,10 +17,10 @@ export default class Staff extends React.Component {
             id="polyline1051"
             transform="matrix(0.63892517,0,0,1,-81.365478,-272.1)"
             style={{
-              fill: 'none',
-              stroke: '#000000',
+              fill: "none",
+              stroke: "#000000",
               strokeWidth: 2,
-              strokeLinejoin: 'bevel',
+              strokeLinejoin: "bevel"
             }}
           />
           <Polyline
@@ -35,10 +29,10 @@ export default class Staff extends React.Component {
             id="polyline1053"
             transform="matrix(0.63892517,0,0,1,-79.365477,-271.1)"
             style={{
-              fill: 'none',
-              stroke: '#000000',
+              fill: "none",
+              stroke: "#000000",
               strokeWidth: 2,
-              strokeLinejoin: 'bevel',
+              strokeLinejoin: "bevel"
             }}
           />
           <Polyline
@@ -47,10 +41,10 @@ export default class Staff extends React.Component {
             id="polyline1055"
             transform="matrix(0.63892517,0,0,1,-79.365477,-271.1)"
             style={{
-              fill: 'none',
-              stroke: '#000000',
+              fill: "none",
+              stroke: "#000000",
               strokeWidth: 2,
-              strokeLinejoin: 'bevel',
+              strokeLinejoin: "bevel"
             }}
           />
           <Polyline
@@ -59,10 +53,10 @@ export default class Staff extends React.Component {
             id="polyline1057"
             transform="matrix(0.63892517,0,0,1,-79.365477,-271.1)"
             style={{
-              fill: 'none',
-              stroke: '#000000',
+              fill: "none",
+              stroke: "#000000",
               strokeWidth: 2,
-              strokeLinejoin: 'bevel',
+              strokeLinejoin: "bevel"
             }}
           />
           <Polyline
@@ -71,10 +65,10 @@ export default class Staff extends React.Component {
             id="polyline1059"
             transform="matrix(0.63892517,0,0,1,-79.365477,-271.1)"
             style={{
-              fill: 'none',
-              stroke: '#000000',
+              fill: "none",
+              stroke: "#000000",
               strokeWidth: 2,
-              strokeLinejoin: 'bevel',
+              strokeLinejoin: "bevel"
             }}
           />
           <Polyline
@@ -83,10 +77,10 @@ export default class Staff extends React.Component {
             id="polyline1061"
             transform="translate(-1130.5414,-271.1)"
             style={{
-              fill: 'none',
-              stroke: '#000000',
+              fill: "none",
+              stroke: "#000000",
               strokeWidth: 4,
-              strokeLinejoin: 'bevel',
+              strokeLinejoin: "bevel"
             }}
           />
           <Path
@@ -95,8 +89,8 @@ export default class Staff extends React.Component {
             id="path1067"
             fill={this.props.activeId == 13 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 13 ? 5 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 13 ? 5 : 0
             }}
           />
           <Path
@@ -105,8 +99,8 @@ export default class Staff extends React.Component {
             id="path1069"
             fill={this.props.activeId == 12 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 12 ? 5 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 12 ? 5 : 0
             }}
           />
           <Path
@@ -115,8 +109,8 @@ export default class Staff extends React.Component {
             id="path1071"
             fill={this.props.activeId == 11 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 11 ? 5 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 11 ? 5 : 0
             }}
           />
           <Path
@@ -125,8 +119,8 @@ export default class Staff extends React.Component {
             id="path1073"
             fill={this.props.activeId == 10 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 10 ? 5 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 10 ? 5 : 0
             }}
           />
           <Path
@@ -135,8 +129,8 @@ export default class Staff extends React.Component {
             id="path1075"
             fill={this.props.activeId == 9 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 9 ? 5 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 9 ? 5 : 0
             }}
           />
           <Polyline
@@ -145,11 +139,11 @@ export default class Staff extends React.Component {
             id="polyline1077"
             fill={this.props.activeId == 9 ? "#388E3C" : "black"}
             style={{
-              fill: 'none',
-              stroke: '#000000',
+              fill: "none",
+              stroke: "#000000",
               strokeWidth: this.props.activeId == 9 ? 8 : 4,
-              strokeLinecap: 'square',
-              strokeLinejoin: 'bevel',
+              strokeLinecap: "square",
+              strokeLinejoin: "bevel"
             }}
             transform="translate(-130.54134,-271.1)"
           />
@@ -159,11 +153,11 @@ export default class Staff extends React.Component {
             id="polyline1079"
             fill={this.props.activeId == 1 ? "#388E3C" : "black"}
             style={{
-              fill: 'none',
-              stroke: '#000000',
+              fill: "none",
+              stroke: "#000000",
               strokeWidth: this.props.activeId == 1 ? 8 : 4,
-              strokeLinecap: 'square',
-              strokeLinejoin: 'bevel',
+              strokeLinecap: "square",
+              strokeLinejoin: "bevel"
             }}
             transform="translate(-130.54134,-271.1)"
           />
@@ -173,8 +167,8 @@ export default class Staff extends React.Component {
             id="path1081"
             fill={this.props.activeId == 8 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 8 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 8 ? 10 : 0
             }}
           />
           <Path
@@ -183,8 +177,8 @@ export default class Staff extends React.Component {
             id="path1083"
             fill={this.props.activeId == 7 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 7 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 7 ? 10 : 0
             }}
           />
           <Path
@@ -193,8 +187,8 @@ export default class Staff extends React.Component {
             id="path1085"
             fill={this.props.activeId == 13 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 13 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 13 ? 10 : 0
             }}
           />
           <Path
@@ -203,8 +197,8 @@ export default class Staff extends React.Component {
             id="path1087"
             fill={this.props.activeId == 6 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 6 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 6 ? 10 : 0
             }}
           />
           <Path
@@ -212,8 +206,8 @@ export default class Staff extends React.Component {
             d="m 1189.2586,106.8 c 3.13,0 5.77,0.8 7.92,2.5 2.01,1.7 3.02,3.9 3.02,6.6 0,4.5 -2.31,8.7 -6.92,12.6 -4.69,3.9 -9.71,5.9 -15.05,5.9 -3.12,0 -5.76,-0.9 -7.91,-2.5 -2.02,-1.7 -3.03,-4 -3.03,-6.6 0,-4.5 2.35,-8.7 7.03,-12.6 4.57,-3.9 9.55,-5.9 14.94,-5.9"
             fill={this.props.activeId == 12 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 12 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 12 ? 10 : 0
             }}
           />
           <Path
@@ -221,8 +215,8 @@ export default class Staff extends React.Component {
             d="m 1068.9386,106.8 c 3.12,0 5.76,0.8 7.92,2.5 2.01,1.7 3.01,3.9 3.01,6.6 0,4.5 -2.3,8.7 -6.92,12.6 -4.69,3.9 -9.7,5.9 -15.05,5.9 -3.12,0 -5.76,-0.9 -7.9,-2.5 -2.02,-1.7 -3.03,-4 -3.03,-6.6 0,-4.5 2.34,-8.7 7.03,-12.6 4.56,-3.9 9.54,-5.9 14.94,-5.9"
             fill={this.props.activeId == 5 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 5 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 5 ? 10 : 0
             }}
           />
           <Path
@@ -230,8 +224,8 @@ export default class Staff extends React.Component {
             d="m 948.60864,119.3 c 3.12,0 5.76,0.8 7.92,2.5 2.01,1.7 3.02,3.9 3.02,6.6 0,4.5 -2.31,8.7 -6.93,12.6 -4.68,3.9 -9.7,5.9 -15.04,5.9 -3.13,0 -5.76,-0.9 -7.91,-2.5 -2.02,-1.7 -3.03,-4 -3.03,-6.6 0,-4.5 2.34,-8.7 7.03,-12.6 4.56,-3.9 9.54,-5.9 14.94,-5.9"
             fill={this.props.activeId == 11 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 11 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 11 ? 10 : 0
             }}
           />
           <Path
@@ -239,8 +233,8 @@ export default class Staff extends React.Component {
             d="m 828.28166,119.3 c 3.125,0 5.766,0.8 7.922,2.5 2.011,1.7 3.016,3.9 3.016,6.6 0,4.5 -2.307,8.7 -6.922,12.6 -4.688,3.9 -9.703,5.9 -15.047,5.9 -3.125,0 -5.76,-0.9 -7.906,-2.5 -2.021,-1.7 -3.031,-4 -3.031,-6.6 0,-4.5 2.343,-8.7 7.031,-12.6 4.562,-3.9 9.542,-5.9 14.937,-5.9"
             fill={this.props.activeId == 4 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 4 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 4 ? 10 : 0
             }}
           />
           <Path
@@ -248,8 +242,8 @@ export default class Staff extends React.Component {
             d="m 707.95566,131.8 c 3.125,0 5.766,0.8 7.922,2.5 2.011,1.7 3.016,3.9 3.016,6.6 0,4.5 -2.307,8.7 -6.922,12.6 -4.688,3.9 -9.703,5.9 -15.047,5.9 -3.125,0 -5.76,-0.9 -7.906,-2.5 -2.021,-1.7 -3.031,-4 -3.031,-6.6 0,-4.5 2.343,-8.7 7.031,-12.6 4.562,-3.9 9.542,-5.9 14.937,-5.9"
             fill={this.props.activeId == 3 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 3 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 3 ? 10 : 0
             }}
           />
           <Path
@@ -258,8 +252,8 @@ export default class Staff extends React.Component {
             id="path1099"
             fill={this.props.activeId == 10 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 10 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 10 ? 10 : 0
             }}
           />
           <Path
@@ -268,8 +262,8 @@ export default class Staff extends React.Component {
             id="path1101"
             fill={this.props.activeId == 2 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 2 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 2 ? 10 : 0
             }}
           />
           <Path
@@ -278,8 +272,8 @@ export default class Staff extends React.Component {
             id="path1103"
             fill={this.props.activeId == 9 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 9 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 9 ? 10 : 0
             }}
           />
           <Path
@@ -288,8 +282,8 @@ export default class Staff extends React.Component {
             id="path1105"
             fill={this.props.activeId == 1 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 1 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 1 ? 10 : 0
             }}
           />
           <Path
@@ -301,86 +295,27 @@ export default class Staff extends React.Component {
       );
     } else {
       return (
-        <Svg
-          width={this.props.deviceWidth < 675 ? "600" : "800"}
-          height={this.props.deviceWidth < 675 ? "75" : "100"}
-          viewBox="0 0 1422 220"
-          style={{ marginTop: -10, marginBottom: this.props.deviceWidth < 675 ? 10 : 20 }}
-        >
+        <Svg width={width - 22} height={(220 / 1422) * (width - 22)} viewBox="0 0 1422 220" style={{ marginTop: -10, marginBottom: scale(20) }}>
           <Defs id="defs907" />
-          <Polyline
-            className="StaffLines"
-            points="141.732,316.732 1521.45,316.732"
-            id="polyline867"
-            fill='none'
-            stroke='#000000'
-            strokeWidth="2"
-            strokeLinejoin='bevel'
-            transform="translate(-117.69422,-240.98188)"
-          />
-          <Polyline
-            className="StaffLines"
-            points="141.732,341.732 1521.45,341.732"
-            id="polyline869"
-            fill='none'
-            stroke='#000000'
-            strokeWidth="2"
-            strokeLinejoin='bevel'
-            transform="translate(-117.69422,-240.98188)"
-          />
-          <Polyline
-            className="StaffLines"
-            points="141.732,366.732 1521.45,366.732"
-            id="polyline871"
-            fill='none'
-            stroke='#000000'
-            strokeWidth="2"
-            strokeLinejoin='bevel'
-            transform="translate(-117.69422,-240.98188)"
-          />
-          <Polyline
-            className="StaffLines"
-            points="141.732,391.732 1521.45,391.732"
-            id="polyline873"
-            fill='none'
-            stroke='#000000'
-            strokeWidth="2"
-            strokeLinejoin='bevel'
-            transform="translate(-117.69422,-240.98188)"
-          />
-          <Polyline
-            className="StaffLines"
-            points="141.732,416.732 1521.45,416.732"
-            id="polyline875"
-            fill='none'
-            stroke='#000000'
-            strokeWidth="2"
-            strokeLinejoin='bevel'
-            transform="translate(-117.69422,-240.98188)"
-          />
-          <Polyline
-            className="BarLine"
-            points="1519.45,315.732 1519.45,417.732"
-            id="polyline877"
-            fill='none'
-            stroke='#000000'
-            strokeWidth="2"
-            strokeLinejoin='bevel'
-            transform="translate(-117.69422,-240.98188)"
-          />
+          <Polyline className="StaffLines" points="141.732,316.732 1521.45,316.732" id="polyline867" fill="none" stroke="#000000" strokeWidth="2" strokeLinejoin="bevel" transform="translate(-117.69422,-240.98188)" />
+          <Polyline className="StaffLines" points="141.732,341.732 1521.45,341.732" id="polyline869" fill="none" stroke="#000000" strokeWidth="2" strokeLinejoin="bevel" transform="translate(-117.69422,-240.98188)" />
+          <Polyline className="StaffLines" points="141.732,366.732 1521.45,366.732" id="polyline871" fill="none" stroke="#000000" strokeWidth="2" strokeLinejoin="bevel" transform="translate(-117.69422,-240.98188)" />
+          <Polyline className="StaffLines" points="141.732,391.732 1521.45,391.732" id="polyline873" fill="none" stroke="#000000" strokeWidth="2" strokeLinejoin="bevel" transform="translate(-117.69422,-240.98188)" />
+          <Polyline className="StaffLines" points="141.732,416.732 1521.45,416.732" id="polyline875" fill="none" stroke="#000000" strokeWidth="2" strokeLinejoin="bevel" transform="translate(-117.69422,-240.98188)" />
+          <Polyline className="BarLine" points="1519.45,315.732 1519.45,417.732" id="polyline877" fill="none" stroke="#000000" strokeWidth="2" strokeLinejoin="bevel" transform="translate(-117.69422,-240.98188)" />
           <Polyline
             className="LedgerLine"
             points="341.904,441.732 389.818,441.732"
             id="polyline879"
-            fill='none'
-            stroke='#000000'
+            fill="none"
+            stroke="#000000"
             strokeWidth="4"
             style={{
-              stroke: '#388E3C',
-              strokeWidth: 8,
+              stroke: "#388E3C",
+              strokeWidth: 8
             }}
-            strokeLinecap='square'
-            strokeLinejoin='bevel'
+            strokeLinecap="square"
+            strokeLinejoin="bevel"
             transform="translate(-117.69422,-240.98188)"
           />
           <Path
@@ -389,8 +324,8 @@ export default class Staff extends React.Component {
             id="path881"
             fill={this.props.activeId == 8 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 8 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 8 ? 10 : 0
             }}
           />
           <Path
@@ -399,8 +334,8 @@ export default class Staff extends React.Component {
             id="path883"
             fill={this.props.activeId == 7 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 7 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 7 ? 10 : 0
             }}
           />
           <Path
@@ -409,8 +344,8 @@ export default class Staff extends React.Component {
             id="path885"
             fill={this.props.activeId == 6 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 6 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 6 ? 10 : 0
             }}
           />
           <Path
@@ -419,8 +354,8 @@ export default class Staff extends React.Component {
             id="path887"
             fill={this.props.activeId == 5 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 5 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 5 ? 10 : 0
             }}
           />
           <Path
@@ -429,8 +364,8 @@ export default class Staff extends React.Component {
             id="path889"
             fill={this.props.activeId == 4 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 4 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 4 ? 10 : 0
             }}
           />
           <Path
@@ -439,8 +374,8 @@ export default class Staff extends React.Component {
             id="path891"
             fill={this.props.activeId == 3 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 3 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 3 ? 10 : 0
             }}
           />
           <Path
@@ -449,8 +384,8 @@ export default class Staff extends React.Component {
             id="path893"
             fill={this.props.activeId == 2 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 2 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 2 ? 10 : 0
             }}
           />
           <Path
@@ -459,8 +394,8 @@ export default class Staff extends React.Component {
             id="path895"
             fill={this.props.activeId == 1 ? "#388E3C" : "black"}
             style={{
-              stroke: '#388E3C',
-              strokeWidth: this.props.activeId == 1 ? 10 : 0,
+              stroke: "#388E3C",
+              strokeWidth: this.props.activeId == 1 ? 10 : 0
             }}
           />
           <Path
