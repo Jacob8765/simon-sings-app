@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "expo": "^33.0.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
+    "expo-ads-admob": "^5.0.1",
+    "expo-av": "^5.0.2",
+    "expo-linear-gradient": "^5.0.1",
     "react": "16.8.3",
-    "schedule": "^0.4.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-33.0.0.tar.gz",
     "react-native-paper": "^2.16.0",
-    "react-navigation": "^2.17.0"
+    "react-navigation": "^2.17.0",
+    "schedule": "^0.4.0"
   }
 }

@@ -2,7 +2,9 @@ import React from "react";
 import { View, Alert, StyleSheet, AsyncStorage, Text, Platform, Dimensions } from "react-native";
 import Buttons from "./Buttons";
 import Staff from "./Staff";
-import { Audio, AdMobInterstitial, LinearGradient } from "expo";
+import { Audio } from "expo-av";
+import { AdMobInterstitial } from "expo-ads-admob";
+import { LinearGradient } from "expo-linear-gradient";
 import { getHighScore, setHighScore } from "../../functions/HighScore";
 import { ActivityIndicator, Surface } from "react-native-paper";
 import Navbar from "../Navbar";
@@ -241,7 +243,7 @@ export default class Game extends React.Component {
             <Staff activeId={this.state.isNoteActiveId} blackKeys={this.state.blackKeys} />
           </View>
 
-            <Buttons deviceWidth={width} checkAnswer={this.checkAnswer} activeId={this.state.isNoteActiveId} staffOnly={this.state.staffOnly} solfege={this.state.solfege} blackKeys={this.state.blackKeys} />
+          <Buttons deviceWidth={width} checkAnswer={this.checkAnswer} activeId={this.state.isNoteActiveId} staffOnly={this.state.staffOnly} solfege={this.state.solfege} blackKeys={this.state.blackKeys} />
 
           <Surface style={styles.scoreContainer}>
             <LinearGradient style={styles.scoreGradient} colors={["#303F9F", "#7B1F9F"]} start={[0, 1]} end={[1, 0]}>

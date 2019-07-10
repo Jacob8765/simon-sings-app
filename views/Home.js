@@ -1,7 +1,7 @@
 import React from "react";
 import { StyleSheet, View, Alert, Dimensions, Text } from "react-native";
 import { getHighScore } from "../functions/HighScore";
-import { LinearGradient } from "expo";
+import { LinearGradient } from "expo-linear-gradient";
 import { Surface, TouchableRipple } from "react-native-paper";
 import { Feather } from "@expo/vector-icons";
 import { scale } from "../functions/AutoScale";
