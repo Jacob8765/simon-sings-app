@@ -1,10 +1,18 @@
 import React from "react";
-import { View, StyleSheet, TouchableWithoutFeedback } from "react-native";
+import { View, StyleSheet, TouchableWithoutFeedback, TouchableOpacity } from "react-native";
 import { Text, Surface, TouchableRipple } from "react-native-paper";
 import { scale } from "../../functions/AutoScale";
 
 const button = (id, letter, solfege, activeId, staffOnly, solfegeEnabled, handlePress) => {
   return (
+    <TouchableOpacity onPressIn={() => handlePress(id)} key={id}>
+      <Surface key={id} style={[styles.buttonSurface, styles.buttonContent, { backgroundColor: activeId == id && !staffOnly ? "#388E3C" : "black" }]}>
+        <Text style={styles.buttonText}>{solfegeEnabled ? solfege : letter}</Text>
+      </Surface>
+    </TouchableOpacity>
+  );
+
+  /*  return (
     <Surface key={id} style={styles.buttonSurface}>
       <TouchableRipple style={[styles.buttonContent, { backgroundColor: activeId == id && !staffOnly ? "#388E3C" : "black" }]} onPress={() => console.log("pressed")}>
         <TouchableWithoutFeedback onPressIn={() => handlePress(id)}>
@@ -12,7 +20,7 @@ const button = (id, letter, solfege, activeId, staffOnly, solfegeEnabled, handle
         </TouchableWithoutFeedback>
       </TouchableRipple>
     </Surface>
-  );
+  ); */
 };
 
 const styles = StyleSheet.create({

@@ -247,7 +247,7 @@ export default class Game extends React.Component {
 
           <Surface style={styles.scoreContainer}>
             <LinearGradient style={styles.scoreGradient} colors={["#303F9F", "#7B1F9F"]} start={[0, 1]} end={[1, 0]}>
-              <Feather name="rotate-cw" size={scale(24)} color="#FFFFFF" />
+              <Feather name="rotate-cw" size={scale(24)} color="#FFFFFF" onPress={this.replayNotes} />
               <Text style={styles.scoreText}>Score: {this.state.score}</Text>
             </LinearGradient>
           </Surface>
