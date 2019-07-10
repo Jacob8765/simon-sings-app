@@ -3,7 +3,7 @@ import { Feather } from "@expo/vector-icons";
 import { View, StyleSheet } from "react-native";
 import { scale } from "../functions/AutoScale";
 import { Menu } from "react-native-paper";
-import { WebBrowser } from "expo";
+import * as WebBrowser from 'expo-web-browser';
 
 export default class Navbar extends React.Component {
   constructor() {

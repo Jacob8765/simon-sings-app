@@ -61,7 +61,6 @@ export default class Buttons extends React.Component {
 
     this.notes = [{ letter: "C", solfege: "Do", id: 1 }, { letter: "D", solfege: "Re", id: 2 }, { letter: "E", solfege: "Mi", id: 3 }, { letter: "F", solfege: "Fa", id: 4 }, { letter: "G", solfege: "Sol", id: 5 }, { letter: "A", solfege: "La", id: 6 }, { letter: "B", solfege: "Ti", id: 7 }, { letter: "C", solfege: "Do", id: 8 }];
     this.blackNotes = [{ placeholder: true }, { letter: "C#", solfege: "Ci", id: 9 }, { placeholder: true }, { letter: "D#", solfege: "Ra", id: 10 }, { placeholder: true }, { placeholder: true }, { placeholder: true }, { letter: "F#", solfege: "Fi", id: 11 }, { placeholder: true }, { letter: "G#", solfege: "Si", id: 12 }, { placeholder: true }, { letter: "A#", solfege: "Le", id: 13 }, { placeholder: true }, { placeholder: true }, { placeholder: true }];
-    console.log(this.blackNotes.length);
   }
 
   handlePress = value => {
@@ -71,7 +70,7 @@ export default class Buttons extends React.Component {
   render() {
     return (
       <View>
-        {this.props.blackKeys ? <View style={[styles.buttonContainer, { marginBottom: 5 }]}>{this.blackNotes.map((note, index) => (!note.placeholder ? button(note.id, note.letter, note.solfege, this.props.activeId, this.props.staffOnly, this.props.solfege, this.handlePress) : <View style={{ width: scale(48), height: scale(48) }} />))}</View> : null}
+        {this.props.blackKeys ? <View style={[styles.buttonContainer, { marginBottom: 5 }]}>{this.blackNotes.map((note, index) => (!note.placeholder ? button(note.id, note.letter, note.solfege, this.props.activeId, this.props.staffOnly, this.props.solfege, this.handlePress) : <View style={{ width: scale(48), height: scale(48) }} key={index} />))}</View> : null}
 
         <View style={styles.buttonContainer}>{this.notes.map((note, index) => button(note.id, note.letter, note.solfege, this.props.activeId, this.props.staffOnly, this.props.solfege, this.handlePress))}</View>
       </View>
