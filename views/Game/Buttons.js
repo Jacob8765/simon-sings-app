@@ -1,6 +1,6 @@
 import React from "react";
-import { View, StyleSheet, TouchableWithoutFeedback, TouchableOpacity } from "react-native";
-import { Text, Surface, TouchableRipple } from "react-native-paper";
+import { View, StyleSheet, TouchableOpacity } from "react-native";
+import { Text, Surface } from "react-native-paper";
 import { scale } from "../../functions/AutoScale";
 
 const button = (id, letter, solfege, activeId, staffOnly, solfegeEnabled, handlePress) => {

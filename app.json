@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Simon Sings",
-    "description": "Learn ear training",
+    "description": "Ear training game",
     "slug": "simon-sings-app",
     "privacy": "public",
     "sdkVersion": "33.0.0",
@@ -9,7 +9,7 @@
     "orientation": "landscape",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/splash2.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },

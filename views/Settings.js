@@ -1,6 +1,5 @@
 import React from "react";
 import { View, StyleSheet, AsyncStorage } from "react-native";
-import { WebBrowser } from "expo";
 import { Switch, Subheading, Provider } from "react-native-paper";
 import Navbar from "./Navbar";
 import { scale } from "../functions/AutoScale";
@@ -46,10 +45,6 @@ export default class Settings extends React.Component {
     } catch (err) {
       console.log(err);
     }
-  };
-
-  openPrivacyPolicy = () => {
-    WebBrowser.openBrowserAsync("https://gist.github.com/Jacob8765/dff0c2aad403f08bf9f5ffc1731c659a");
   };
 
   render() {

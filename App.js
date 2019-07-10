@@ -2,7 +2,6 @@ import Home from "./views/Home";
 import Settings from "./views/Settings";
 import Game from "./views/Game/Game";
 import { createStackNavigator } from "react-navigation";
-import { Provider as PaperProvider } from "react-native-paper";
 
 const App = createStackNavigator(
   {
