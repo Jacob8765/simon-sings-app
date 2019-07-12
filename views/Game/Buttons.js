@@ -11,16 +11,6 @@ const button = (id, letter, solfege, activeId, staffOnly, solfegeEnabled, handle
       </Surface>
     </TouchableOpacity>
   );
-
-  /*  return (
-    <Surface key={id} style={styles.buttonSurface}>
-      <TouchableRipple style={[styles.buttonContent, { backgroundColor: activeId == id && !staffOnly ? "#388E3C" : "black" }]} onPress={() => console.log("pressed")}>
-        <TouchableWithoutFeedback onPressIn={() => handlePress(id)}>
-          <Text style={styles.buttonText}>{solfegeEnabled ? solfege : letter}</Text>
-        </TouchableWithoutFeedback>
-      </TouchableRipple>
-    </Surface>
-  ); */
 };
 
 const styles = StyleSheet.create({
@@ -49,8 +39,8 @@ const styles = StyleSheet.create({
 
   buttonContainer: {
     flexDirection: "row",
-    marginRight: 30,
-    marginLeft: 30,
+    marginRight: scale(30),
+    marginLeft: scale(30),
     justifyContent: "space-between"
   }
 });
