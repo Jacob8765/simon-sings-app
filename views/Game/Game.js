@@ -265,14 +265,14 @@ export default class Game extends React.Component {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,
+    padding: scale(10),
     flex: 1
   },
 
   scoreContainer: {
     width: width - 20,
-    margin: 10,
-    borderRadius: 16,
+    margin: scale(10),
+    borderRadius: scale(16),
     elevation: 9,
     position: "absolute",
     bottom: 0,
@@ -280,15 +280,15 @@ const styles = StyleSheet.create({
   },
 
   scoreGradient: {
-    padding: 14,
-    borderRadius: 16,
+    padding: scale(14),
+    borderRadius: scale(16),
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center"
   },
 
   scoreText: {
-    fontSize: 20,
+    fontSize: scale(20),
     color: "white",
     fontFamily: "sans-serif-light"
   }
