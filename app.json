@@ -19,7 +19,7 @@
     "android": {
       "package": "com.jacobschuster.simonsings",
       "permissions": [],
-      "versionCode": 3
+      "versionCode": 4
     }
   }
 }
