@@ -96,11 +96,11 @@ export default class Game extends React.Component {
     this.soundObj6.loadAsync(require("../../assets/sounds/6_new.mp3"));
     this.soundObj7.loadAsync(require("../../assets/sounds/7_new.mp3"));
     this.soundObj8.loadAsync(require("../../assets/sounds/8_new.mp3"));
-    this.soundObj9.loadAsync(require("../../assets/sounds/9.mp3"));
-    this.soundObj10.loadAsync(require("../../assets/sounds/10.mp3"));
-    this.soundObj11.loadAsync(require("../../assets/sounds/11.mp3"));
-    this.soundObj12.loadAsync(require("../../assets/sounds/12.mp3"));
-    this.soundObj13.loadAsync(require("../../assets/sounds/13.mp3")).then(() => {
+    this.soundObj9.loadAsync(require("../../assets/sounds/9_new.mp3"));
+    this.soundObj10.loadAsync(require("../../assets/sounds/10_new.mp3"));
+    this.soundObj11.loadAsync(require("../../assets/sounds/11_new.mp3"));
+    this.soundObj12.loadAsync(require("../../assets/sounds/12_new.mp3"));
+    this.soundObj13.loadAsync(require("../../assets/sounds/13_new.mp3")).then(() => {
       this.newNumber();
     });
   };
@@ -114,11 +114,11 @@ export default class Game extends React.Component {
     this.soundObj6.unloadAsync(require("../../assets/sounds/6_new.mp3"));
     this.soundObj7.unloadAsync(require("../../assets/sounds/7_new.mp3"));
     this.soundObj8.unloadAsync(require("../../assets/sounds/8_new.mp3"));
-    this.soundObj9.unloadAsync(require("../../assets/sounds/9.mp3"));
-    this.soundObj10.unloadAsync(require("../../assets/sounds/10.mp3"));
-    this.soundObj11.unloadAsync(require("../../assets/sounds/11.mp3"));
-    this.soundObj12.unloadAsync(require("../../assets/sounds/12.mp3"));
-    this.soundObj13.unloadAsync(require("../../assets/sounds/13.mp3"));
+    this.soundObj9.unloadAsync(require("../../assets/sounds/9_new.mp3"));
+    this.soundObj10.unloadAsync(require("../../assets/sounds/10_new.mp3"));
+    this.soundObj11.unloadAsync(require("../../assets/sounds/11_new.mp3"));
+    this.soundObj12.unloadAsync(require("../../assets/sounds/12_new.mp3"));
+    this.soundObj13.unloadAsync(require("../../assets/sounds/13_new.mp3"));
   };
 
   playSound = async number => {
