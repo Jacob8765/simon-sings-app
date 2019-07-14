@@ -7,7 +7,7 @@ const { width, height } = Dimensions.get("window");
 
 const button = (id, letter, solfege, activeId, staffOnly, solfegeEnabled, handlePress, marginLeft) => {
   return (
-    <TouchableOpacity onPressIn={() => handlePress(id)} key={id} style={{ marginLeft }}>
+    <TouchableOpacity onPressIn={() => handlePress(id)} key={id} style={{ left: marginLeft }}>
       <Surface key={id} style={[styles.buttonSurface, styles.buttonContent, { backgroundColor: activeId == id && !staffOnly ? "#388E3C" : "black" }]}>
         <Text style={styles.buttonText}>{solfegeEnabled ? solfege : letter}</Text>
       </Surface>
@@ -66,15 +66,15 @@ export default class Buttons extends React.Component {
       { placeholder: true, overSpace: false },
       { letter: "C#", solfege: "Ci", id: 9, i: 1 },
       { placeholder: true, overSpace: false },
-      { letter: "D#", solfege: "Ra", id: 10, i: 2 },
+      { letter: "D#", solfege: "Ra", id: 10, i: 3 },
       { placeholder: true, overSpace: false },
       { placeholder: true, overSpace: true },
       { placeholder: true, overSpace: false },
-      { letter: "F#", solfege: "Fi", id: 11, i: 3 },
+      { letter: "F#", solfege: "Fi", id: 11, i: 5 },
       { placeholder: true, overSpace: false },
-      { letter: "G#", solfege: "Si", id: 12, i: 4 },
+      { letter: "G#", solfege: "Si", id: 12, i: 7 },
       { placeholder: true, overSpace: false },
-      { letter: "A#", solfege: "Le", id: 13, i: 5 },
+      { letter: "A#", solfege: "Le", id: 13, i: 9 },
       { placeholder: true, overSpace: false },
       { placeholder: true, overSpace: true },
       { placeholder: true, overSpace: false }
