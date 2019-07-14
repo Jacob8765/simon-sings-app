@@ -88,14 +88,14 @@ export default class Game extends React.Component {
   };
 
   loadSounds = () => {
-    this.soundObj1.loadAsync(require("../../assets/sounds/1.mp3"));
-    this.soundObj2.loadAsync(require("../../assets/sounds/2.mp3"));
-    this.soundObj3.loadAsync(require("../../assets/sounds/3.mp3"));
-    this.soundObj4.loadAsync(require("../../assets/sounds/4.mp3"));
-    this.soundObj5.loadAsync(require("../../assets/sounds/5.mp3"));
-    this.soundObj6.loadAsync(require("../../assets/sounds/6.mp3"));
-    this.soundObj7.loadAsync(require("../../assets/sounds/7.mp3"));
-    this.soundObj8.loadAsync(require("../../assets/sounds/8.mp3"));
+    this.soundObj1.loadAsync(require("../../assets/sounds/1_new.mp3"));
+    this.soundObj2.loadAsync(require("../../assets/sounds/2_new.mp3"));
+    this.soundObj3.loadAsync(require("../../assets/sounds/3_new.mp3"));
+    this.soundObj4.loadAsync(require("../../assets/sounds/4_new.mp3"));
+    this.soundObj5.loadAsync(require("../../assets/sounds/5_new.mp3"));
+    this.soundObj6.loadAsync(require("../../assets/sounds/6_new.mp3"));
+    this.soundObj7.loadAsync(require("../../assets/sounds/7_new.mp3"));
+    this.soundObj8.loadAsync(require("../../assets/sounds/8_new.mp3"));
     this.soundObj9.loadAsync(require("../../assets/sounds/9.mp3"));
     this.soundObj10.loadAsync(require("../../assets/sounds/10.mp3"));
     this.soundObj11.loadAsync(require("../../assets/sounds/11.mp3"));
@@ -106,14 +106,14 @@ export default class Game extends React.Component {
   };
 
   unloadSounds = () => {
-    this.soundObj1.unloadAsync(require("../../assets/sounds/1.mp3"));
-    this.soundObj2.unloadAsync(require("../../assets/sounds/2.mp3"));
-    this.soundObj3.unloadAsync(require("../../assets/sounds/3.mp3"));
-    this.soundObj4.unloadAsync(require("../../assets/sounds/4.mp3"));
-    this.soundObj5.unloadAsync(require("../../assets/sounds/5.mp3"));
-    this.soundObj6.unloadAsync(require("../../assets/sounds/6.mp3"));
-    this.soundObj7.unloadAsync(require("../../assets/sounds/7.mp3"));
-    this.soundObj8.unloadAsync(require("../../assets/sounds/8.mp3"));
+    this.soundObj1.unloadAsync(require("../../assets/sounds/1_new.mp3"));
+    this.soundObj2.unloadAsync(require("../../assets/sounds/2_new.mp3"));
+    this.soundObj3.unloadAsync(require("../../assets/sounds/3_new.mp3"));
+    this.soundObj4.unloadAsync(require("../../assets/sounds/4_new.mp3"));
+    this.soundObj5.unloadAsync(require("../../assets/sounds/5_new.mp3"));
+    this.soundObj6.unloadAsync(require("../../assets/sounds/6_new.mp3"));
+    this.soundObj7.unloadAsync(require("../../assets/sounds/7_new.mp3"));
+    this.soundObj8.unloadAsync(require("../../assets/sounds/8_new.mp3"));
     this.soundObj9.unloadAsync(require("../../assets/sounds/9.mp3"));
     this.soundObj10.unloadAsync(require("../../assets/sounds/10.mp3"));
     this.soundObj11.unloadAsync(require("../../assets/sounds/11.mp3"));
